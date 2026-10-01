@@ -1,5 +1,4 @@
 **MicTray**
-
 MicTray is a lightweight tool which sits in your tray, let's you mute/unmute your selected mic upon clicking the tray Icon.
 
 Built using C++

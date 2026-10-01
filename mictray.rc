@@ -1,0 +1,42 @@
+// mictray.rc - exe icon + version/publisher information
+//
+// >>> EDIT THESE THREE LINES <<<
+#define PUBLISHER       "Your Name"
+#define COPYRIGHT_YEAR  "2026"
+#define APP_VERSION_STR "1.0.0.0"
+#define APP_VERSION_NUM 1,0,0,0
+// >>> -------------------- <<<
+
+#include <winver.h>
+
+// Lowest numeric icon ID = the icon Explorer shows for the .exe
+1 ICON "mictray.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    APP_VERSION_NUM
+ PRODUCTVERSION APP_VERSION_NUM
+ FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+ FILEFLAGS      0
+ FILEOS         VOS_NT_WINDOWS32
+ FILETYPE       VFT_APP
+ FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"   // US English, Unicode
+        BEGIN
+            VALUE "CompanyName",      PUBLISHER
+            VALUE "FileDescription",  "Mic Tray - tray microphone mute control"
+            VALUE "FileVersion",      APP_VERSION_STR
+            VALUE "InternalName",     "MicTray"
+            VALUE "LegalCopyright",   "Copyright \251 " COPYRIGHT_YEAR " " PUBLISHER ". All rights reserved."
+            VALUE "OriginalFilename", "MicTray.exe"
+            VALUE "ProductName",      "Mic Tray"
+            VALUE "ProductVersion",   APP_VERSION_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04B0
+    END
+END

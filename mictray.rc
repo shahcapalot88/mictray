@@ -13,16 +13,16 @@ VS_VERSION_INFO VERSIONINFO
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "040904B0" 
+        BLOCK "040904B0"
         BEGIN
-            VALUE "CompanyName",      Subhajit Maji
+            VALUE "CompanyName",      "Subhajit Maji"
             VALUE "FileDescription",  "Mic Tray - tray microphone mute control"
-            VALUE "FileVersion",      1,0,0,0
+            VALUE "FileVersion",      "1.0.0.0"
             VALUE "InternalName",     "MicTray"
-            VALUE "LegalCopyright",   "Copyright © 2026 Subhajit Maji . All rights reserved."
+            VALUE "LegalCopyright",   "Copyright © 2026 Subhajit Maji. All rights reserved."
             VALUE "OriginalFilename", "MicTray.exe"
             VALUE "ProductName",      "Mic Tray"
-            VALUE "ProductVersion",   1,0,0,0
+            VALUE "ProductVersion",   "1.0.0.0"
         END
     END
     BLOCK "VarFileInfo"

@@ -1,12 +1,4 @@
-// mictray.cpp - tray microphone mute control (Windows 10/11, native Win32, no dependencies)
-//
-// Build: run build.bat (GCC / MinGW-w64; -municode defines UNICODE, -mwindows sets GUI subsystem)
-//
-// Left click tray icon  : toggle mute on the selected input
-// Right click           : Select Input / Start with Windows / Hotkeys / Exit
-// Green mic = live, red mic with slash = muted.
-
-#include <initguid.h>          // must come first: defines GUIDs/PROPERTYKEYs in this TU
+#include <initguid.h>          
 #include <windows.h>
 #include <shellapi.h>
 #include <mmdeviceapi.h>
